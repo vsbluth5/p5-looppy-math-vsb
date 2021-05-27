@@ -29,15 +29,28 @@ for (let i = 7; i <= 1007; i=i+10) {
 
 
 // 8. Print out every even number from 1-100.
-
+// Use %2
 
 // 9. Print out every multiple of three from 1-100.
-
+// Use %3
 
 // 10. Print out multiples of two, another list of multiples of three, and then a third list of items which appear in both lists.
 
 
 // CHALLENGE: Print out numbers which are multiples of 3 OR multiples of 2, but not multiples of both.
+for (let i=0; i<1000; i++){
+  if (i%6 != 0 (i%2 || i%3)) console.log(i)
+}
 
 
 // SUPER CHALLENGE: Print out the first 40 numbers in the Fibonacci sequence.
+let prev1 = 0;
+console.log(prev1)
+let prev2 = 1;
+console.log(prev2)
+for (let i = 0; i<38; i++){
+  let next = prev1+prev2
+  console.log(next)
+  prev1 = prev2
+  prev2 = next
+}
